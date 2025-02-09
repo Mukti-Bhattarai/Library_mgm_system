@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archives</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./dataManager.js" type="module" charset="utf-8" defer></script>
+  <script type="module" src="./script.js" defer></script>
+</head>
+
+<body class="bg-[#393e46] min-h-[100vh] flex flex-col justify-between w-full">
+  <nav class="bg-cover bg-[#222831] flex flex-row justify-between p-2">
+    <a href="../index.html">
+      <img src="../assets/Chakravuya-Archives.png" alt="" class="w-[40vw]">
+    </a>
+    <div class="flex gap-2 pr-4">
+      <a href="#">
+        <li class="list-none text-white bg-orange-500 py-1 px-2 rounded">Add</li>
+      </a>
+      <a href="./read.php">
+        <li class="list-none text-white bg-orange-500 py-1 px-2 rounded">Update</li>
+      </a>
+    </div>
+  </nav>
+
+  <main class="h-[80vh] sm:my-16 sm:h-full flex flex-col justify-center bg-[#393E46] items-center">
+    <h1 class="mb-6 text-3xl text-white">Add Records...</h1>
+    <form action="write.php" method="post" class="flex flex-col justify-around bg-[#fd7014] p-4 mx-2 rounded-lg mb-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="form-group">
+          <input type="number" id="isbn" name="isbn" class="text-lg py-1 px-2 rounded" placeholder="Book ISBN" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="bookName" name="bookName" class="text-lg py-1 px-2 rounded" placeholder="Book Name" required>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <div class="form-group">
+          <input type="text" id="author" name="author" class="text-lg py-1 px-2 rounded" placeholder="Author" required>
+        </div>
+        <div class="form-group">
+          <input type="number" id="quantity" name="quantity" class="text-lg py-1 px-2 rounded" placeholder="Stock Quantity" required>
+        </div>
+      </div>
+      <div class="flex w-full justify-center">
+        <button type="submit" class="mt-4 bg-white inline-block text-lg py-1 px-4 rounded" id="myBtn">Add</button>
+      </div>
+    </form>
+
+    <div class="flex justify-center mt-4">
+      <a href="Update_Data.php">
+        <button class="bg-white text-cyan p-2 rounded">View Records</button>
+      </a>
+    </div>
+  </main>
+</body>
+
+</html>
