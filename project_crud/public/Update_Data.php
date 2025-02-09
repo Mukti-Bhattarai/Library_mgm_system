@@ -18,8 +18,8 @@ if (!$result) {
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-  <script src="./data.js" type="module" charset="utf-8" defer></script>
-  <script src="./dataManager.js" type="module" charset="utf-8" defer></script>
+  <script src="./js/data.js" type="module" charset="utf-8" defer></script>
+  <script src="./js/dataManager.js" type="module" charset="utf-8" defer></script>
   <script src="https://kit.fontawesome.com/f06ee4b06e.js" crossorigin="anonymous"></script>
     <style>
 .table-container {
