@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventory Management System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
+<link rel="stylesheet" href="./Public/style.css">
+</head>
+
+<body class="bg-[url('../assets/MinecraftTrailer.jpeg')] bg-cover bg-center h-full min-h-[100vh] absolute flex flex-col justify-between ">
+  <nav class=" 
+  bg-cover bg-black/80 flex w-full justify-between p-2 w-full ">
+    <img src="../assets/Chakravuya-Archives.png" alt="" class="w-[40vw]">
+    
+    <div class="flex gap-2 pr-4">
+      <a href="./Add_Data.html">
+    <li class="list-none text-white bg-orange-500 py-1 px-2 rounded ">Add</li>
+      </a>
+      <a href=".Update_Data.php">
+    <li  class="list-none text-white bg-orange-500 py-1 px-2 rounded">View</li>
+      </a>
+    </div>
+
+    
+  </nav>
+  
+  <main class="flex flex-col justify-center items-center h-[80vh] w-[100vw] m-1 p-1 gap-4">
+    <section class="" id="greeting-section">
+      <h1 class="text-[3rem] text-white text-shadow  ">Welcome 2 Chakravuya Archives </h1>
+    </section>
+    <section class="flex justify-center gap-2" id="navigation-boxes">
+    <a href="./Add_Data.html">  <div  id="add-items" class="h-36  w-36 rounded bg-[url('../assets/Bookshelf.png')] bg-cover bg-center flex justify-center items-center bg-cyan-500/50 ">
+        <button class="text-xl  text-orange-600 shadow-lg border border-white shadow-white/50 p-0.5 rounded bg-[#c3e5e7]/75">Add Records</button>
+        
+      
+      </div>
+    </a>
+     <a href="./Update_Data.php"> <div class="  h-36  w-36 rounded bg-[url('../assets/Table.gif')] bg-cover bg-center flex justify-center items-center bg-cyan-500/50" id="update-items">
+        <button class="text-xl  text-orange-600 shadow-lg border border-white shadow-white/50 p-0.5 rounded bg-[#c3e5e7]/75">View Records </button>
+      </div> </a>
+      
+    </section>
+    
+  </main>
+  <footer class="bg-black ">
+    <p class="text-sm text-white text-center" id="footer-txt">&copy;</p>
+  </footer>
+  <script>
+    const myparagraph = document.querySelector("#footer-txt")
+    myparagraph.textContent += ` ${new Date().getFullYear()} Team Chakravuya All Rights Reserved `
+  </script>
+</body>
+
+</html>
